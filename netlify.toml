@@ -1,0 +1,9 @@
+[build]
+  publish = "public"
+
+[[redirects]]
+  from = "/*"
+  to = "https://integrate.api.nvidia.com/:splat"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
